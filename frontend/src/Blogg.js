@@ -17,7 +17,7 @@ const Blogg = () => {
             if(token ==null){
                 navigate("/",{state:null});
             }else{
-                const res=await axios.get("http://localhost:7000/blog", {
+                const res=await axios.get("https://blogapp-owc5.onrender.com", {
                     headers:{
                         "X-Token":token,
                        },
